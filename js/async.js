@@ -21,7 +21,7 @@ $(document).ready(() => {
                 $('.field_group .pic a img')[i].setAttribute('src', games[i].background);
                 title.setAttribute('href', games[i].desktopLink);
                 if (description.length > 128) {
-                    title.innerHTML = description.slice(0, 128) + '... <span class="blue">read more</span>';
+                    title.innerHTML = description.slice(0, 110) + '... <span class="blue">read more</span>';
                 } else {
                     title.innerText = description;
                 }
@@ -36,7 +36,7 @@ $(document).ready(() => {
                 $('.gallery_items_second .pic a img')[i].setAttribute('src', games[i].background);
                 title.setAttribute('href', games[i].desktopLink);
                 if (description.length > 128) {
-                    title.innerHTML = description.slice(0, 128) + '... <span class="blue">read more</span>';
+                    title.innerHTML = description.slice(0, 80) + '... <span class="blue">read more</span>';
                 } else {
                     title.innerText = description;
                 }
