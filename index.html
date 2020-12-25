@@ -275,7 +275,7 @@
         </section>
     </header>
 
-    <section class="main">
+    <section class="main" v-show="games.length">
         <div class="container">
             <div class="main-container">
                 <div class="main-left_block">
@@ -320,72 +320,26 @@
                     <article class="main-content">
                         <div class="main-content_top">
                             <div class="main-content_top_text">
-                                <h4 class="">الجوائز تؤكد المكانة المتميزة التي يشغلها«بيتك» كأبرز مؤسسة مصرفية
-                                    إسلامية</h4>
-                                <p class="top_text_right">فاز <a href="/" class=""
-                                                                 target="_blank">بيت
-                                    التمويل الكويتي</a> «بيتك»، بـ 3 جوائز مرموقة ضمن جوائز مجلة مجموعة التمويل الاسلامي
-                                    «إسلاميك فاينانس نيوزIFN» السنوية للعام 2018، وحصل «بيتك» على جائزة أفضل بنك إسلامي
-                                    في
-                                    الكويت، بالاضافة الى جائزة صفقة العام على مستوى الكويت والمتعلقة بادارة وترتيب صفقة
-                                    تمويل مرابحة مشترك بقيمة 250 مليون دولار لصالح بنك الكويت الدولي، وصفقة العام للبنى
-                                    التحتية على مستوى تركيا والمتعلقة بتمويل مشروع انشاء جسر «جناكالا» المعلق في تركيا،
-                                    وتعد
-                                    الجوائز على تنوعها وشموليتها إضافة جديدة للجوائز التي تقدمها جهات عالمية مشهورة
-                                    ومحايدة،
-                                    تؤكد المكانة المتميزة التي يشغلها«بيتك» كأبرز مؤسسة مصرفية إسلامية في الكويت
-                                    والعالم.
+                                <h4 class="">{{ top.title }}</h4>
+                                <p class="top_text_right"><a class="vue_generate" :href="top.desktopLink" class="" target="_blank"></a>
                                 </p>
                             </div>
 
                             <div class="main-content_img">
                                 <div class="main-content_top_img">
-                                    <a href="#" class="main-search">
+                                    <a class="main-search">
                                         <img src="images/icons/search-button.png">
                                     </a>
-                                    <img class="main-content_img" src="images/890757-1.jpg" alt="الخرجي يتسلم الجوائز">
+                                    <a class="vue_generate" :href="top.desktopLink"><img class="main-content_img" :src="top.background" alt="الخرجي يتسلم الجوائز"></a>
                                 </div>
-                                <span>احمد الخرجي يتسلم الجوائز</span>
+                                <span>{{ top.title }}</span>
                             </div>
 
 
                         </div>
                     </article>
                     <article class="main-text_content">
-                        <div class="main-content_bottom_text">
-                            <p style="">واختارت مجموعة «IFN» (إسلاميك فايننس نيوز) «بيتك» لهذه الجوائز بناء على توصيات
-                                لجنة تحكيم خاصة مؤلفة من خبراء ومحللين متخصصين حول العالم في قطاع الصيرفة الإسلامية، إذ
-                                تم التقييم وفق مجموعة من الأسس والمؤشرات المالية عن أفضل المؤسسات والصفقات الإسلامية
-                                خلال عام 2018.
-                            </p>
-                            <p>وقال رئيس التمويل في مجموعة «بيتك» احمد الخرجي في تصريح صحافي عقب تسلم الجوائز انها تعكس
-                                الاهمية الكبيرة والدور المحوري الذي يلعبه «بيتك» في صناعة الخدمات المالية الاسلامية على
-                                المستويات العالمية والمحلية والاقليمية، وكفاءة أدواته الاستثمارية في تقديم الحلول
-                                التمويلية من خلال مجموعة مبتكرة من الخدمات والمنتجات المصرفية الإسلامية داخل الكويت
-                                وخارجها، تستجيب لاحتياجات وتطلعات عملائه من الأفراد والشركات، وتضيف قيما جديدة للسوق
-                                والاقتصاد الوطني على صعيد القطاعات كافة.</p>
-                            <p>وأضاف أن حصول «بيتك»على الجوائز يؤكد مكانته وريادته وقدرته كذلك على مواجهة المنافسة
-                                المهنية التي تتصاعد في قطاع الصيرفة الإسلامية، حيث تمكن من تعزيز حصته السوقية في مجالات
-                                مهمة ورئيسية ليحتل مركز الصدارة، وبقوة «بيتك» بدور رائد في قطاع التمويل الإسلامي عموما،
-                                في وقت يتزايد فيه الإقبال على أدوات التمويل الإسلامي في العالم، مشيرا الى ان «بيتك»
-                                يمتلك خبرات واسعة في العمل المصرفي الاسلامي، وترتيب كبرى صفقات التمويل لمشاريع تنموية
-                                عملاقة في مجال البنى التحتية بما يغطي العديد من القطاعات الحيوية ويساهم بدفع عجلة
-                                الاقتصاد.</p>
-                            <p>وقال ان جائزة صفقة العام للبنى التحتية على مستوى السوق التركي تتعلق بتمويل مشروع
-                                جسر«جناكالا» في تركيا، حيث شارك «بيتك» و«بيتك-تركيا» باجمالي 200 مليون يورو، وساهم 24
-                                مصرفا ومؤسسة مالية عالمية مختلفة بعقد تمويل الجسر الذي يعد من أكبر المشاريع في تركيا،
-                                بما يعكس قدرات مجموعة «بيتك» المتميزة في المشاركة في مثل هذه الصفقات وتوافر الثقة
-                                والخبرة والعلاقات الجيدة في الاسواق الدولية، ومتانة الوضع المالي والمكانة العالمية
-                                المرموقة.</p>
-                            <p>وجاءت البنوك المشاركة في التمويل من 10 دول وهي، كوريا الجنوبية، وألمانيا، وفرنسا،
-                                وإيطاليا، والإمارات العربية المتحدة، فضلا عن الكويت، والصين، والمملكة المتحدة، والدنمارك
-                                إضافة إلى تمويل تركي، ويقع الجسرالمعلق في مضيق «جناكالا» غرب تركيا على ارتفاع 318 مترا،
-                                فيما يكون امتداده الرئيسي 2023 مترا، ليصبح بذلك أطول جسر معلق في العالم، ومن المقرر
-                                انجازه كما هو مخطط عام 2023.</p>
-                            <p>وتكرم جائزة «إسلاميك فاينانس نيوز»، أفضل المؤسسات المالية والمصرفية العاملة في قطاع
-                                التمويل الإسلامي.وهي إحدى أبرز الجوائز وأكثرها تقديرا في الأوساط المالية الإسلامية
-                                العالمية.</p>
-                        </div>
+                        {{ top.description }}
                         <div class="banner-mobile">
                             <a href="#">
                                 <img src="images/alanbasafecam-mpu2-19aug20.jpg">
@@ -437,23 +391,24 @@
                     <section class="recent_posts" v-show="games.length">
 
                         <div class="section_title">مواضيع ذات صلة</div>
-                        <div class="gallery" >
-                            <article class="gallery_items" v-for="game of games">
+                        <div class="gallery">
+                            <article class="gallery_items" v-for="game of games.slice(0, 8)">
                                 <div class="field_group">
                                     <div class="pic">
-                                        <a :href="game.desktopLink" class="w_hover img-link img-wrap">
-                                            <img :src="game.background" alt="مديرو الاستثمار «يترسون» محافظهم بالأسهم.. استعداداً للترقية إلى «مورجان ستانلي»"></a>
+                                        <a class="vue_generate" :href="game.desktopLink" class="w_hover img-link img-wrap">
+                                            <img :src="game.background"
+                                                 alt="مديرو الاستثمار «يترسون» محافظهم بالأسهم.. استعداداً للترقية إلى «مورجان ستانلي»"></a>
                                     </div>
                                     <h3>
-                                        <a :href="game.desktopLink">{{ game.description.slice(0, 128) }}...</a>
+                                        <a class="vue_generate" :href="game.desktopLink">{{ game.description.slice(0, 128) }}...</a>
                                     </h3>
                                 </div>
                                 <ul class="icons">
                                     <li>
-                                        <a :href="game.desktopLink"
+                                        <a class="vue_generate" :href="game.desktopLink"
                                            class="post_date icons_date">{{ game.startdate }}</a></li>
                                     <li>
-                                        <a :href="game.desktopLink"
+                                        <a class="vue_generate" :href="game.desktopLink"
                                            class="post_views icons_views">{{game.followers}}</a></li>
                                 </ul>
                             </article>
@@ -473,7 +428,7 @@
                                 </div>
                             </div>
                     </section>
-                    <section v-show="games.length">
+                    <section v-show="games.length > 8">
                         <div class="collapsBox clicked">
                             <div class="collapsBox_block">
                             <span class="collapsBox_block_add">
@@ -492,15 +447,16 @@
                         <div>
                             <div class="gallery_toggle">
                                 <div class="gallery ">
-                                    <article class="gallery_items_second" v-for="game of games.slice(0, 4)">
+                                    <article class="gallery_items_second" v-for="game of games.slice(8, 17)">
                                         <div class="pic">
                                             <a
-                                                    :href="game.desktopLink"
+                                                    class="vue_generate" :href="game.desktopLink"
                                                     class="w_hover img-link img-wrap">
-                                                <img :src="game.background" alt="«غلوبل فايننس»: «بيتك» أفضل مؤسسة مالية إسلامية بالعالم لعام 2020"></a>
+                                                <img :src="game.background"
+                                                     alt="«غلوبل فايننس»: «بيتك» أفضل مؤسسة مالية إسلامية بالعالم لعام 2020"></a>
                                         </div>
                                         <h3>
-                                            <a :href="game.desktopLink">{{ game.description.slice(0, 100) }}...</a>
+                                            <a class="vue_generate" :href="game.desktopLink">{{ game.description.slice(0, 100) }}...</a>
                                         </h3>
                                         <span class="date">{{ game.startdate }}</span>
                                     </article>
@@ -508,17 +464,17 @@
                                 </div>
                                 <div class="section_title section">اخترنا لك</div>
                                 <div class="gallery ">
-                                    <article class="gallery_items_second" v-for="game of games">
+                                    <article class="gallery_items_second" v-for="game of games.slice(16, 25)">
                                         <div class="pic">
                                             <a
-                                                    :href="game.desktopLink"
+                                                    class="vue_generate" :href="game.desktopLink"
                                                     class="w_hover img-link img-wrap">
                                                 <img
                                                         :src="game.background"
                                                         alt="«كورونا» يهوي بإنفاق الكويتيين على السفر إلى 1.27 مليار دينار "></a>
                                         </div>
                                         <h3>
-                                            <a :href="game.desktopLink">
+                                            <a class="vue_generate" :href="game.desktopLink">
                                                 {{ game.description.slice(0, 100) }}... </a>
                                         </h3>
                                         <span class="date">{{ game.startdate }}</span>
@@ -530,24 +486,26 @@
                 </div>
                 <div class="main-right_block right-banner">
                     <a href="#">
-                        <img src="images/alanbasafecam-mpu2-19aug20.jpg">
+                        <a v-show="img2" class="vue_generate" :href="img2.desktopLink"><img :src="img2.background"></a>
                     </a>
-                    <div class="main-right_img">
+                    <div v-show="img1" class="main-right_img">
                         <div class="widget_header">
-                            <div class="widget_title">الأمم المتحدة وأهداف التنمية المستدامة</div>
+                            <div class="widget_title">{{ img1.title }}</div>
                         </div>
-                        <a href="#">
-                            <img src="images/737_20191017%2017SS1213321.jpg">
+                        <a class="vue_generate" :href="img1.desktopLink">
+                            <img :src="img1.background">
+
                         </a>
                         <div class="main_right_text">
-                            <a href="/" target="_blank">الأمم المتحدة وأهداف التنمية
-                                المستدامة.. 17 هدفاً لتحويل عالمنا</a>
+                            <a class="vue_generate" :href="img1.desktopLink" target="_blank">{{ img1.title }}</a>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
+    </section>
+    <section v-show="!games.length" class="text-center">
     </section>
     <footer class="footer footer-desctop">
         <div class="container">
