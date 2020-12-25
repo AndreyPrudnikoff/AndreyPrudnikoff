@@ -1460,5 +1460,11 @@ img {
 
 }
 
+.text-center {
+    padding-top: 10vh;
+    text-align: center;
+    min-height: 33vh;
+}
+
 
 
